@@ -1,0 +1,17 @@
+{
+  "nvpmodel": "NVPM WARN: fan mode is not set!\nNV Power Mode: MAXN\n0\nNVPM ERROR: Error opening /sys/kernel/nvpmodel_emc_cap/emc_iso_cap: 13\nNVPM ERROR: failed to read PARAM EMC: ARG MAX_FREQ: PATH /sys/kernel/nvpmodel_emc_cap/emc_iso_cap",
+  "jetson_clocks": "SOC family:tegra210  Machine:NVIDIA Jetson Nano Developer Kit\nError: Run this script(/usr/bin/jetson_clocks) as a root user",
+  "cpu_governors": {
+    "0": "schedutil",
+    "1": "schedutil",
+    "2": "schedutil",
+    "3": "schedutil"
+  },
+  "cpu_frequencies_khz": {
+    "0": 1326000,
+    "1": 1326000,
+    "2": 1326000,
+    "3": 1326000
+  },
+  "note": "No power or clock setting was changed by this benchmark."
+}

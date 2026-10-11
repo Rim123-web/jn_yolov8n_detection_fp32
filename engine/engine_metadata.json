@@ -1,0 +1,86 @@
+{
+  "path": "/home/jetson/Downloads/jetson_folder/yolov8n_detection_fp32_benchmark/yolov8n_detection_tensorrt_fp32_640x960_batch1_warmup10_20260720_165642/engine/oct_albument2_v6_tensorrt_fp32_1x3x640x960.engine",
+  "filename": "oct_albument2_v6_tensorrt_fp32_1x3x640x960.engine",
+  "size_bytes": 30147102,
+  "size_mib": 28.750516891479492,
+  "modified_time": "2026-07-20T17:14:14.718423+02:00",
+  "sha256": "8c050c451554bd664b56b7cde3ed5de7ce02358e56a5f90806f8ee36a6e3d1ab",
+  "status": "PASS",
+  "build_config": {
+    "precision": "strict FP32",
+    "explicit_batch": true,
+    "input_shape": [
+      1,
+      3,
+      640,
+      960
+    ],
+    "workspace_bytes": 1073741824,
+    "workspace_mib": 1024,
+    "builder_flags_integer": 0,
+    "FP16_flag": "OFF",
+    "INT8_flag": "OFF",
+    "TF32_flag": "OFF",
+    "GPU_FALLBACK_flag": "OFF",
+    "DLA": "OFF; default device GPU",
+    "calibration": "NONE",
+    "mixed_precision": "OFF",
+    "timing_cache": "fresh builder process; no historical timing cache loaded or saved",
+    "python_import_order": "NumPy initialized before TensorRT to avoid a documented pre-main SIGILL on this Jetson image",
+    "tactic_sources": "TensorRT 8.0.1 defaults",
+    "builder_optimization_level": "API unavailable/not configured",
+    "platform_has_fast_fp16": true,
+    "platform_has_fast_int8": false,
+    "tensorrt_version": "8.0.1.6",
+    "cuda_version": "10.2",
+    "gpu_architecture": "NVIDIA Tegra X1 (Maxwell)",
+    "command_description": "TensorRT Python explicit-batch build: FP16=OFF INT8=OFF TF32=OFF DLA=OFF workspace=1024MiB"
+  },
+  "runtime_deserialization_validation": "PASS",
+  "engine_path": "/home/jetson/Downloads/jetson_folder/yolov8n_detection_fp32_benchmark/yolov8n_detection_tensorrt_fp32_640x960_batch1_warmup10_20260720_165642/engine/oct_albument2_v6_tensorrt_fp32_1x3x640x960.engine",
+  "tensorrt_version": "8.0.1.6",
+  "cudart_path": "libcudart.so.10.2",
+  "execution_api": "IExecutionContext.execute_async_v2",
+  "cuda_stream": "one package-local runtime stream",
+  "timing": "CUDA events around H2D, execute_async_v2, and D2H; each event end synchronized; stream synchronized before return",
+  "pinned_memory": false,
+  "buffer_allocation": "device buffers allocated once before any warm-up; reusable NumPy host output buffers",
+  "binding_metadata": [
+    {
+      "index": 0,
+      "name": "images",
+      "is_input": true,
+      "engine_shape": [
+        1,
+        3,
+        640,
+        960
+      ],
+      "runtime_shape": [
+        1,
+        3,
+        640,
+        960
+      ],
+      "dtype": "DataType.FLOAT"
+    },
+    {
+      "index": 1,
+      "name": "output0",
+      "is_input": false,
+      "engine_shape": [
+        1,
+        10,
+        12600
+      ],
+      "runtime_shape": [
+        1,
+        10,
+        12600
+      ],
+      "dtype": "DataType.FLOAT"
+    }
+  ],
+  "no_inference_executed_during_metadata_validation": true,
+  "recovery_note": "Fresh engine serialized by the original builder process; separate metadata validation completed after replacing TensorRT 8.0.1 trt.nptype with an explicit NumPy 1.24-compatible dtype mapping. Engine was not rebuilt."
+}

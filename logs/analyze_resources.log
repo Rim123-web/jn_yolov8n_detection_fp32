@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "verified": [
+    "/home/jetson/Downloads/jetson_folder/yolov8n_detection_fp32_benchmark/yolov8n_detection_tensorrt_fp32_640x960_batch1_warmup10_20260720_165642/resources/resource_summary.json",
+    "/home/jetson/Downloads/jetson_folder/yolov8n_detection_fp32_benchmark/yolov8n_detection_tensorrt_fp32_640x960_batch1_warmup10_20260720_165642/temperature/temperature_summary.json",
+    "/home/jetson/Downloads/jetson_folder/yolov8n_detection_fp32_benchmark/yolov8n_detection_tensorrt_fp32_640x960_batch1_warmup10_20260720_165642/throttling/throttling_summary.json"
+  ]
+}

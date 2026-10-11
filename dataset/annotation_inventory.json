@@ -1,0 +1,17 @@
+{
+  "format": "YOLO normalized text",
+  "annotation_files": 192,
+  "objects": 1994,
+  "classes": [
+    "leccino",
+    "varietafrancese",
+    "cimadimelfimisto",
+    "ulivigrandi",
+    "montalbanosecolari",
+    "irriguo"
+  ],
+  "empty_label_files": [
+    "/home/jetson/Downloads/jetson_folder/jetson_test_imgs/labels/test/class_4_montalbanosecolari_DJI_20240525180256_0323.txt"
+  ],
+  "missing_annotations": []
+}

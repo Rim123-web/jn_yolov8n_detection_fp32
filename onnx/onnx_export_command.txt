@@ -1,0 +1,1 @@
+YOLO(/home/jetson/Downloads/jetson_folder/yolov8n_detection_fp32_benchmark/yolov8n_detection_tensorrt_fp32_640x960_batch1_warmup10_20260720_165642/model/oct_albument2_v6_source.pt).export(format='onnx', imgsz=(640,960), batch=1, opset=12, dynamic=False, simplify=False, half=False, int8=False, nms=False, device=0)

@@ -1,0 +1,32 @@
+[2026-07-20T16:58:50+02:00] prepare_package.py PASS; OOM counter fallback recorded
+[2026-07-20T16:59:02+02:00] export_onnx.py fresh FP32 opset12 static 1x3x640x960
+[2026-07-20T16:59:07.931348+02:00] YOLO(/home/jetson/Downloads/jetson_folder/yolov8n_detection_fp32_benchmark/yolov8n_detection_tensorrt_fp32_640x960_batch1_warmup10_20260720_165642/model/oct_albument2_v6_source.pt).export(format='onnx', imgsz=(640,960), batch=1, opset=12, dynamic=False, simplify=False, half=False, int8=False, nms=False, device=0)
+[2026-07-20T17:02:39+02:00] validate_onnx.py checker + 20-image equivalence PASS
+[2026-07-20T17:02:39+02:00] validate_tensorrt_parser.py
+PYTHONNOUSERSITE=1 PYTHONPATH=<package_scripts>:<benchmark_env_site> BENCHMARK_DIR=<result> python scripts/validate_tensorrt_parser.py
+PYTHONNOUSERSITE=1 PYTHONPATH=<package_scripts>:<benchmark_env_site> BENCHMARK_DIR=<result> python scripts/build_fp32_engine.py
+[2026-07-20T17:11:16.739766+02:00] TensorRT Python explicit-batch build: FP16=OFF INT8=OFF TF32=OFF DLA=OFF workspace=1024MiB
+PYTHONNOUSERSITE=1 PYTHONPATH=<package_scripts>:<benchmark_env_site> BENCHMARK_DIR=<result> python scripts/finalize_engine_metadata.py (no inference)
+PYTHONNOUSERSITE=1 PYTHONPATH=<package_scripts>:<benchmark_env_site> BENCHMARK_DIR=<result> python scripts/validate_correctness.py (20 real images)
+python scripts/recover_correctness_summary.py (offline only; zero inference)
+python scripts/run_jtop_health_test.py (30 consecutive samples)
+python scripts/capture_idle.py (60-second idle baseline)
+python scripts/benchmark_fp32_detection.py (exactly 10 real warmups excluded; 192 official images once)
+python scripts/calculate_detection_metrics.py (offline from saved raw outputs; zero inference)
+python scripts/analyze_timings.py (offline analysis; zero inference)
+python scripts/analyze_energy.py (offline analysis; zero inference)
+python scripts/analyze_resources.py (offline analysis; zero inference)
+python scripts/generate_figures.py (33 figures x PNG/SVG/PDF plus source CSV)
+python scripts/generate_reports.py
+python scripts/finalize_provenance.py
+python scripts/create_manifest.py
+python scripts/validate_package.py
+bash scripts/package_results.sh <result> (only after final validation PASS)
+python scripts/repair_timing_units.py (offline exact conversion; zero inference)
+python scripts/analyze_timings.py (regenerated after timing-unit correction)
+python scripts/generate_figures.py (regenerated after timing-unit correction)
+python scripts/generate_reports.py (regenerated after timing-unit correction)
+python scripts/finalize_provenance.py (regenerated after timing-unit correction)
+python scripts/create_manifest.py; python scripts/validate_package.py; bash scripts/package_results.sh <result> (corrected final package)
+python scripts/analyze_timings.py; generate_figures.py; generate_reports.py (offline atomic-bottleneck definition correction; zero inference)
+python scripts/finalize_provenance.py; create_manifest.py; validate_package.py; package_results.sh (final audited package)

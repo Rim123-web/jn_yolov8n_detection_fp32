@@ -1,0 +1,50 @@
+{
+  "largest_mean_latency_stage": "tensorrt_engine_ms",
+  "largest_stage_mean_ms": 91.63649189472198,
+  "bottleneck_selection_scope": "atomic independently timed stages only; aggregate totals excluded",
+  "percentage_outside_tensorrt": 38.115919666587445,
+  "preprocessing_share_percent": 30.96455137150389,
+  "h2d_share_percent": 2.6429614940136616,
+  "engine_share_percent": 61.884080333412555,
+  "d2h_share_percent": 0.38732422064810684,
+  "postprocessing_share_percent": 3.1881964598770485,
+  "nms_share_percent": 1.939356018483749,
+  "cpu_bound_stages": [
+    "file_access_decode",
+    "PIL resize/letterbox",
+    "NumPy output decode/NMS/rescale"
+  ],
+  "gpu_bound_stages": [
+    "H2D",
+    "TensorRT engine",
+    "D2H"
+  ],
+  "stage_means_ms": {
+    "file_access_decode_ms": 20.130489781250002,
+    "exif_orientation_ms": 1.2091224375,
+    "color_conversion_ms": 0.9591874739583334,
+    "resize_calculation_ms": 0.023581229166666665,
+    "image_resize_ms": 1.8269737135416666,
+    "padding_letterbox_ms": 1.8147497031250002,
+    "pixel_scaling_ms": 13.679549369791667,
+    "layout_conversion_ms": 0.04762573958333333,
+    "fp32_contiguous_ms": 6.1452320729166665,
+    "preprocessing_total_ms": 45.851580010416676,
+    "h2d_ms": 3.913635271290938,
+    "tensorrt_engine_ms": 91.63649189472198,
+    "d2h_ms": 0.5735406038972238,
+    "transfer_inclusive_inference_ms": 96.902103359375,
+    "raw_output_decode_ms": 0.027958796875,
+    "box_conversion_ms": 0.63526190625,
+    "confidence_calculation_ms": 0.18438843229166668,
+    "confidence_filtering_ms": 0.285928046875,
+    "class_selection_ms": 0.05726630729166667,
+    "nms_preparation_ms": 0.047203328125,
+    "nms_ms": 2.8717528177083333,
+    "coordinate_rescaling_ms": 0.14033901041666666,
+    "box_clipping_ms": 0.29759141145833334,
+    "result_formatting_ms": 0.16458681770833333,
+    "postprocessing_total_ms": 4.721006395833333,
+    "end_to_end_ms": 148.07765002083332
+  }
+}

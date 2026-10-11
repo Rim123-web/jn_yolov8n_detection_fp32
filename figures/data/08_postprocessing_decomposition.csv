@@ -1,0 +1,11 @@
+Postprocessing stage,Mean latency (ms)
+raw_output_decode,0.027958796875
+box_conversion,0.6352619062500001
+confidence_calculation,0.18438843229166668
+confidence_filtering,0.285928046875
+class_selection,0.05726630729166667
+nms_preparation,0.047203328125
+nms,2.8717528177083333
+coordinate_rescaling,0.14033901041666666
+box_clipping,0.29759141145833334
+result_formatting,0.16458681770833333

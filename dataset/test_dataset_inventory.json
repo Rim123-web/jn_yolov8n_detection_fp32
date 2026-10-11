@@ -1,0 +1,25 @@
+{
+  "root": "/home/jetson/Downloads/jetson_folder/jetson_test_imgs",
+  "image_root": "/home/jetson/Downloads/jetson_folder/jetson_test_imgs/images/test",
+  "label_root": "/home/jetson/Downloads/jetson_folder/jetson_test_imgs/labels/test",
+  "total_images": 192,
+  "extensions": {
+    ".jpg": 192
+  },
+  "dimension_distribution": [
+    {
+      "width": 960,
+      "height": 640,
+      "count": 191
+    },
+    {
+      "width": 4096,
+      "height": 3068,
+      "count": 1
+    }
+  ],
+  "corrupt_images": [],
+  "duplicate_file_groups": {},
+  "duplicate_decoded_pixel_groups": {},
+  "deterministic_order": "case-insensitive lexicographic absolute path"
+}

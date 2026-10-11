@@ -1,0 +1,33 @@
+{
+  "status": "PASS",
+  "parser_return": true,
+  "errors": [],
+  "warnings": "See logs/tensorrt_parser.log for TensorRT verbose output",
+  "inputs": [
+    {
+      "name": "images",
+      "shape": [
+        1,
+        3,
+        640,
+        960
+      ],
+      "dtype": "DataType.FLOAT"
+    }
+  ],
+  "outputs": [
+    {
+      "name": "output0",
+      "shape": [
+        1,
+        10,
+        12600
+      ],
+      "dtype": "DataType.FLOAT"
+    }
+  ],
+  "explicit_batch": true,
+  "unsupported_operations": [],
+  "plugin_requirements": "none reported",
+  "tensorrt_version": "8.0.1.6"
+}

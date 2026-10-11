@@ -1,0 +1,4 @@
+probe: interpreter started
+probe: build module imported; main not invoked; no builder API called
+numpy 1.24.4
+tensorrt 8.0.1.6 /home/jetson/.local/lib/python3.8/site-packages/tensorrt/__init__.py

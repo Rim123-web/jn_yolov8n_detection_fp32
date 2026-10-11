@@ -1,0 +1,216 @@
+{
+  "status": "PASS",
+  "gate_count": 41,
+  "passed_gate_count": 41,
+  "failed_gates": [],
+  "gates": [
+    {
+      "gate": "source_pt_exists",
+      "pass": true,
+      "evidence": "/home/jetson/Downloads/jetson_folder/yolov8n_detection_fp32_benchmark/yolov8n_detection_tensorrt_fp32_640x960_batch1_warmup10_20260720_165642/model/oct_albument2_v6_source.pt"
+    },
+    {
+      "gate": "source_hash_matches_original",
+      "pass": true,
+      "evidence": "7c09b3b9866f633c60005b7446f29e9612fae00a8789ab9fe983b32b2f08828d"
+    },
+    {
+      "gate": "onnx_exists_and_hash_matches",
+      "pass": true,
+      "evidence": "6a58292b377d7bdfe208fa23adff170e864d9d8695dba0c7ab4d6e426ff15524"
+    },
+    {
+      "gate": "engine_exists_and_hash_matches",
+      "pass": true,
+      "evidence": "8c050c451554bd664b56b7cde3ed5de7ce02358e56a5f90806f8ee36a6e3d1ab"
+    },
+    {
+      "gate": "strict_fp32",
+      "pass": true,
+      "evidence": ""
+    },
+    {
+      "gate": "input_shape",
+      "pass": true,
+      "evidence": ""
+    },
+    {
+      "gate": "batch_one",
+      "pass": true,
+      "evidence": ""
+    },
+    {
+      "gate": "class_mapping",
+      "pass": true,
+      "evidence": ""
+    },
+    {
+      "gate": "dataset_manifest",
+      "pass": true,
+      "evidence": "rows=192"
+    },
+    {
+      "gate": "warmup_rows_exactly_10",
+      "pass": true,
+      "evidence": ""
+    },
+    {
+      "gate": "warmup_paths_unique",
+      "pass": true,
+      "evidence": ""
+    },
+    {
+      "gate": "warmup_engine_executions_10",
+      "pass": true,
+      "evidence": ""
+    },
+    {
+      "gate": "warmups_excluded",
+      "pass": true,
+      "evidence": ""
+    },
+    {
+      "gate": "measured_rows_exact",
+      "pass": true,
+      "evidence": ""
+    },
+    {
+      "gate": "prediction_image_rows_exact",
+      "pass": true,
+      "evidence": ""
+    },
+    {
+      "gate": "measured_paths_unique",
+      "pass": true,
+      "evidence": ""
+    },
+    {
+      "gate": "failed_images_zero",
+      "pass": true,
+      "evidence": ""
+    },
+    {
+      "gate": "discarded_rows_zero",
+      "pass": true,
+      "evidence": ""
+    },
+    {
+      "gate": "hidden_executions_zero",
+      "pass": true,
+      "evidence": ""
+    },
+    {
+      "gate": "official_execution_count",
+      "pass": true,
+      "evidence": ""
+    },
+    {
+      "gate": "all_timings_finite_nonnegative",
+      "pass": true,
+      "evidence": ""
+    },
+    {
+      "gate": "independent_nms_timing",
+      "pass": true,
+      "evidence": ""
+    },
+    {
+      "gate": "independent_engine_timing",
+      "pass": true,
+      "evidence": ""
+    },
+    {
+      "gate": "end_to_end_timing",
+      "pass": true,
+      "evidence": ""
+    },
+    {
+      "gate": "timing_units_and_decomposition",
+      "pass": true,
+      "evidence": "preprocess <2000 ms and |end-to-end - preprocess - transfer-inclusive - postprocess| <10 ms for every row"
+    },
+    {
+      "gate": "onnx_checker",
+      "pass": true,
+      "evidence": ""
+    },
+    {
+      "gate": "onnx_equivalence",
+      "pass": true,
+      "evidence": ""
+    },
+    {
+      "gate": "tensorrt_parser",
+      "pass": true,
+      "evidence": ""
+    },
+    {
+      "gate": "correctness",
+      "pass": true,
+      "evidence": ""
+    },
+    {
+      "gate": "jtop_health",
+      "pass": true,
+      "evidence": ""
+    },
+    {
+      "gate": "idle_baseline",
+      "pass": true,
+      "evidence": ""
+    },
+    {
+      "gate": "energy_integration",
+      "pass": true,
+      "evidence": ""
+    },
+    {
+      "gate": "metrics",
+      "pass": true,
+      "evidence": ""
+    },
+    {
+      "gate": "telemetry_coverage",
+      "pass": true,
+      "evidence": ""
+    },
+    {
+      "gate": "figures_all_formats",
+      "pass": true,
+      "evidence": "{'png': 33, 'svg': 33, 'pdf': 33}"
+    },
+    {
+      "gate": "figure_source_data",
+      "pass": true,
+      "evidence": ""
+    },
+    {
+      "gate": "required_scripts",
+      "pass": true,
+      "evidence": ""
+    },
+    {
+      "gate": "required_reports",
+      "pass": true,
+      "evidence": ""
+    },
+    {
+      "gate": "timing_unit_repair_evidence",
+      "pass": true,
+      "evidence": ""
+    },
+    {
+      "gate": "atomic_bottleneck_definition",
+      "pass": true,
+      "evidence": ""
+    },
+    {
+      "gate": "hash_manifest",
+      "pass": true,
+      "evidence": "entries=303 failures=[]"
+    }
+  ],
+  "manifest_entries_verified": 303,
+  "manifest_failures": [],
+  "note": "Final validation reports and the self-referential manifest files are intentionally excluded from the payload manifest."
+}

@@ -1,0 +1,5 @@
+definition,fps
+engine_fps,10.912683138818382
+transfer_inclusive_fps,10.319693436285487
+latency_derived_pipeline_fps,6.753213600157135
+wall_clock_pipeline_fps,6.621677827791318

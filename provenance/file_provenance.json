@@ -1,0 +1,34 @@
+{
+  "manifest": "provenance/hash_manifest.csv",
+  "manifest_sha256_file": "provenance/hash_manifest.sha256",
+  "excluded_self_referential_files": [
+    "provenance/hash_manifest.csv",
+    "provenance/hash_manifest.sha256",
+    "validation/final_validation_report.json",
+    "validation/final_validation_report.md"
+  ],
+  "source_model": {
+    "path": "/home/jetson/Downloads/jetson_folder/yolov8n_detection_fp32_benchmark/yolov8n_detection_tensorrt_fp32_640x960_batch1_warmup10_20260720_165642/model/oct_albument2_v6_source.pt",
+    "filename": "oct_albument2_v6_source.pt",
+    "size_bytes": 6300003,
+    "size_mib": 6.008151054382324,
+    "modified_time": "2026-05-07T17:15:06+02:00",
+    "sha256": "7c09b3b9866f633c60005b7446f29e9612fae00a8789ab9fe983b32b2f08828d"
+  },
+  "onnx": {
+    "path": "/home/jetson/Downloads/jetson_folder/yolov8n_detection_fp32_benchmark/yolov8n_detection_tensorrt_fp32_640x960_batch1_warmup10_20260720_165642/onnx/oct_albument2_v6_inference_only.onnx",
+    "filename": "oct_albument2_v6_inference_only.onnx",
+    "size_bytes": 12326349,
+    "size_mib": 11.755322456359863,
+    "modified_time": "2026-07-20T16:59:54.519119+02:00",
+    "sha256": "6a58292b377d7bdfe208fa23adff170e864d9d8695dba0c7ab4d6e426ff15524"
+  },
+  "engine": {
+    "path": "/home/jetson/Downloads/jetson_folder/yolov8n_detection_fp32_benchmark/yolov8n_detection_tensorrt_fp32_640x960_batch1_warmup10_20260720_165642/engine/oct_albument2_v6_tensorrt_fp32_1x3x640x960.engine",
+    "filename": "oct_albument2_v6_tensorrt_fp32_1x3x640x960.engine",
+    "size_bytes": 30147102,
+    "size_mib": 28.750516891479492,
+    "modified_time": "2026-07-20T17:14:14.718423+02:00",
+    "sha256": "8c050c451554bd664b56b7cde3ed5de7ce02358e56a5f90806f8ee36a6e3d1ab"
+  }
+}

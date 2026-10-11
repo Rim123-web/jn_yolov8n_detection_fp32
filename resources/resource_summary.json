@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "cpu_mean_percent": 37.33771929824562,
+  "cpu_max_percent": 59.25,
+  "gpu_mean_percent": 64.02280701754387,
+  "gpu_max_percent": 99.7,
+  "ram_mean_mib": 2459.9037143640353,
+  "ram_max_mib": 2557.81640625,
+  "process_rss_mean_mib": 1432.8056469298247,
+  "process_rss_max_mib": 1544.1484375,
+  "sample_count": 57,
+  "telemetry_method": "jtop/jetson-stats Power TOT"
+}

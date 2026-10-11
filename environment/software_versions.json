@@ -1,0 +1,15 @@
+{
+  "python": "3.8.10 (default, Mar 18 2025, 20:04:55) \n[GCC 9.4.0]",
+  "python_executable": "/home/jetson/Downloads/jetson_nano/.venv_yolo/bin/python",
+  "torch": "1.13.0a0+git7c98e70",
+  "torchvision": "0.14.0a0+5ce4506",
+  "ultralytics": "8.4.47",
+  "numpy": "1.24.4",
+  "pillow": "9.2.0",
+  "opencv": "4.13.0",
+  "pycuda": "UNAVAILABLE and intentionally unused",
+  "onnx": "1.17.0 from jetson_benchmark_env",
+  "onnxruntime": "1.19.2 CPUExecutionProvider from jetson_benchmark_env",
+  "tensorrt": "8.0.1.6 from /home/jetson/.local/lib/python3.8/site-packages",
+  "jtop": "4.3.2"
+}

@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "method": "trapezoidal integration over timestamped Power TOT; benchmark endpoints extended using nearest valid sample",
+  "measured_pass_duration_s": 28.99567224400016,
+  "telemetry_sample_count": 57,
+  "telemetry_internal_coverage_fraction": 0.9677640630941184,
+  "active_mean_power_w_time_weighted": 7.162040663318678,
+  "active_sample_mean_power_w": 7.166666666666667,
+  "active_median_power_w": 7.235,
+  "active_p95_power_w": 8.4732,
+  "active_max_power_w": 8.846,
+  "active_min_power_w": 4.037,
+  "gross_energy_j": 207.6681836717899,
+  "gross_energy_per_image_j": 1.0816051232905723,
+  "idle_mean_power_w": 2.6181487603305786,
+  "idle_corrected_active_power_w": 4.543891902988102,
+  "idle_corrected_energy_j": 131.7532003312092,
+  "idle_corrected_energy_per_image_j": 0.6862145850583813,
+  "power_outlier_warning": false,
+  "warmups_excluded": true
+}

@@ -1,0 +1,1 @@
+The first parser launch failed before ONNX parsing because the clean Python path filtered the TensorRT user-site directory. The package-local parser/runtime/build scripts now insert only /home/jetson/.local/lib/python3.8/site-packages at runtime. No package was installed or modified. The failed traceback is preserved separately.

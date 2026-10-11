@@ -1,0 +1,7 @@
+{
+  "python_seed": 42,
+  "numpy_seed": 42,
+  "torch_seed": 42,
+  "deterministic_image_order": true,
+  "random_sampling": false
+}

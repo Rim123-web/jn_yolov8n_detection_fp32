@@ -1,0 +1,4 @@
+Runtime component,Mean latency (ms)
+H2D,3.913635271290938
+TensorRT engine,91.63649189472198
+D2H,0.5735406038972238

@@ -1,0 +1,17 @@
+{
+  "nms_nodes": {},
+  "embedded_nms": false,
+  "status": "PASS",
+  "raw_output_expected": true,
+  "output_shapes": [
+    {
+      "name": "output0",
+      "dtype": "FLOAT",
+      "shape": [
+        1,
+        10,
+        12600
+      ]
+    }
+  ]
+}

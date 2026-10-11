@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "root": "/home/jetson/Downloads/jetson_folder/yolov8n_detection_fp32_benchmark/yolov8n_detection_tensorrt_fp32_640x960_batch1_warmup10_20260720_165642",
+  "source": {
+    "path": "/home/jetson/Downloads/jetson_folder/oct_albument2_v6.pt",
+    "filename": "oct_albument2_v6.pt",
+    "size_bytes": 6300003,
+    "size_mib": 6.008151054382324,
+    "modified_time": "2026-05-07T17:15:06+02:00",
+    "sha256": "7c09b3b9866f633c60005b7446f29e9612fae00a8789ab9fe983b32b2f08828d"
+  },
+  "images": 192,
+  "classes": [
+    "leccino",
+    "varietafrancese",
+    "cimadimelfimisto",
+    "ulivigrandi",
+    "montalbanosecolari",
+    "irriguo"
+  ]
+}

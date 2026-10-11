@@ -1,0 +1,2 @@
+The package preparation script passed. A trailing shell grep for /proc/vmstat oom_kill returned 1 because this kernel exposes no matching counter; preparation was not rerun.
+Recovery: collect journal/dmesg OOM evidence read-only before and after the benchmark.

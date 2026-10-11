@@ -1,0 +1,44 @@
+Correctness 1/20 pass=True
+Correctness 2/20 pass=True
+Correctness 3/20 pass=True
+Correctness 4/20 pass=True
+Correctness 5/20 pass=True
+Correctness 6/20 pass=True
+Correctness 7/20 pass=True
+Correctness 8/20 pass=True
+Correctness 9/20 pass=True
+Correctness 10/20 pass=True
+Correctness 11/20 pass=True
+Correctness 12/20 pass=True
+Correctness 13/20 pass=True
+Correctness 14/20 pass=True
+Correctness 15/20 pass=True
+Correctness 16/20 pass=True
+Correctness 17/20 pass=True
+Correctness 18/20 pass=True
+Correctness 19/20 pass=True
+Correctness 20/20 pass=True
+Traceback (most recent call last):
+  File "/home/jetson/Downloads/jetson_folder/yolov8n_detection_fp32_benchmark/yolov8n_detection_tensorrt_fp32_640x960_batch1_warmup10_20260720_165642/scripts/validate_correctness.py", line 134, in <module>
+    main()
+  File "/home/jetson/Downloads/jetson_folder/yolov8n_detection_fp32_benchmark/yolov8n_detection_tensorrt_fp32_640x960_batch1_warmup10_20260720_165642/scripts/validate_correctness.py", line 127, in main
+    write_json(ROOT / "validation/fp32_correctness_summary.json", summary)
+  File "/home/jetson/Downloads/jetson_folder/yolov8n_detection_fp32_benchmark/yolov8n_detection_tensorrt_fp32_640x960_batch1_warmup10_20260720_165642/scripts/common.py", line 50, in write_json
+    path.write_text(json.dumps(value, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+  File "/usr/lib/python3.8/json/__init__.py", line 234, in dumps
+    return cls(
+  File "/usr/lib/python3.8/json/encoder.py", line 201, in encode
+    chunks = list(chunks)
+  File "/usr/lib/python3.8/json/encoder.py", line 431, in _iterencode
+    yield from _iterencode_dict(o, _current_indent_level)
+  File "/usr/lib/python3.8/json/encoder.py", line 405, in _iterencode_dict
+    yield from chunks
+  File "/usr/lib/python3.8/json/encoder.py", line 325, in _iterencode_list
+    yield from chunks
+  File "/usr/lib/python3.8/json/encoder.py", line 405, in _iterencode_dict
+    yield from chunks
+  File "/usr/lib/python3.8/json/encoder.py", line 438, in _iterencode
+    o = _default(o)
+  File "/usr/lib/python3.8/json/encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type bool_ is not JSON serializable

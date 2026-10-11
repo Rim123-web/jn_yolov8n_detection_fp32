@@ -1,0 +1,108 @@
+YOLOv8n detection TensorRT FP32 benchmark software environment
+Generated: 2026-07-20T17:40:43.728743+02:00
+
+Approved runtime environment variables (credentials excluded):
+PYTHONNOUSERSITE=1
+BENCHMARK_DIR=/home/jetson/Downloads/jetson_folder/yolov8n_detection_fp32_benchmark/yolov8n_detection_tensorrt_fp32_640x960_batch1_warmup10_20260720_165642
+PYTHONPATH=<result>/scripts for runtime; existing jetson_benchmark_env site-packages added only for ONNX/ONNXRuntime phases; known TensorRT user-site inserted narrowly by package-local TensorRT modules
+
+System information JSON:
+{
+  "captured_at": "2026-07-20T16:58:07.206023+02:00",
+  "hostname": "nano",
+  "ip_addresses": [
+    "192.168.9.117",
+    "172.17.0.1"
+  ],
+  "boot_id": "3c4db3be-2b73-4970-bb73-c6b154353ed9",
+  "uptime_seconds": 7175.92,
+  "architecture": "aarch64",
+  "os": "Linux-4.9.253-tegra-aarch64-with-glibc2.29",
+  "ubuntu": "Ubuntu 20.04.6 LTS",
+  "kernel": "4.9.253-tegra",
+  "l4t": "# R32 (release), REVISION: 6.1, GCID: 27863751, BOARD: t210ref, EABI: aarch64, DATE: Mon Jul 26 19:20:30 UTC 2021",
+  "cuda_nvcc": "nvcc: NVIDIA (R) Cuda compiler driver\nCopyright (c) 2005-2021 NVIDIA Corporation\nBuilt on Sun_Feb_28_22:34:44_PST_2021\nCuda compilation tools, release 10.2, V10.2.300\nBuild cuda_10.2_r440.TC440_70.29663091_0",
+  "tensorrt": "8.0.1.6",
+  "cudnn_packages": "ii  libcudnn8                                  8.2.1.32-1+cuda10.2                        arm64        cuDNN runtime libraries\nii  libcudnn8-dev                              8.2.1.32-1+cuda10.2                        arm64        cuDNN development libraries and headers\nii  libcudnn8-samples                          8.2.1.32-1+cuda10.2                        arm64        cuDNN documents and samples\nii  nvidia-container-csv-cudnn                 8.2.1.32-1+cuda10.2                        arm64        Jetpack CUDNN CSV file",
+  "python": "3.8.10 (default, Mar 18 2025, 20:04:55) \n[GCC 9.4.0]",
+  "python_executable": "/home/jetson/Downloads/jetson_nano/.venv_yolo/bin/python",
+  "nvpmodel": "NVPM WARN: fan mode is not set!\nNV Power Mode: MAXN\n0\nNVPM ERROR: Error opening /sys/kernel/nvpmodel_emc_cap/emc_iso_cap: 13\nNVPM ERROR: failed to read PARAM EMC: ARG MAX_FREQ: PATH /sys/kernel/nvpmodel_emc_cap/emc_iso_cap",
+  "jetson_clocks": "SOC family:tegra210  Machine:NVIDIA Jetson Nano Developer Kit\nError: Run this script(/usr/bin/jetson_clocks) as a root user",
+  "cpu_online": "0-3",
+  "cpu_governors": {
+    "0": "schedutil",
+    "1": "schedutil",
+    "2": "schedutil",
+    "3": "schedutil"
+  },
+  "cpu_frequencies_khz": {
+    "0": 1326000,
+    "1": 1326000,
+    "2": 1326000,
+    "3": 1326000
+  },
+  "ram": {
+    "total": 4155346944,
+    "available": 1725116416,
+    "percent": 58.5,
+    "used": 2430230528,
+    "free": 518176768,
+    "active": 1981800448,
+    "inactive": 1184002048,
+    "buffers": 139882496,
+    "cached": 1264111616,
+    "shared": 21585920,
+    "slab": 169824256
+  },
+  "swap": {
+    "total": 2077655040,
+    "used": 5472256,
+    "free": 2072182784,
+    "percent": 0.3,
+    "sin": 401408,
+    "sout": 5550080
+  },
+  "disk": {
+    "total": 124068839424,
+    "used": 39907909632,
+    "free": 79039766528,
+    "percent": 33.6
+  },
+  "jtop_version": "4.3.2",
+  "jtop_service": "active"
+}
+
+Software versions JSON:
+{
+  "python": "3.8.10 (default, Mar 18 2025, 20:04:55) \n[GCC 9.4.0]",
+  "python_executable": "/home/jetson/Downloads/jetson_nano/.venv_yolo/bin/python",
+  "torch": "1.13.0a0+git7c98e70",
+  "torchvision": "0.14.0a0+5ce4506",
+  "ultralytics": "8.4.47",
+  "numpy": "1.24.4",
+  "pillow": "9.2.0",
+  "opencv": "4.13.0",
+  "pycuda": "UNAVAILABLE and intentionally unused",
+  "onnx": "1.17.0 from jetson_benchmark_env",
+  "onnxruntime": "1.19.2 CPUExecutionProvider from jetson_benchmark_env",
+  "tensorrt": "8.0.1.6 from /home/jetson/.local/lib/python3.8/site-packages",
+  "jtop": "4.3.2"
+}
+
+Python environment evidence:
+python: 3.8.10 (default, Mar 18 2025, 20:04:55) 
+[GCC 9.4.0]
+python_executable: /home/jetson/Downloads/jetson_nano/.venv_yolo/bin/python
+torch: 1.13.0a0+git7c98e70
+torchvision: 0.14.0a0+5ce4506
+ultralytics: 8.4.47
+numpy: 1.24.4
+pillow: 9.2.0
+opencv: 4.13.0
+pycuda: UNAVAILABLE and intentionally unused
+onnx: 1.17.0 from jetson_benchmark_env
+onnxruntime: 1.19.2 CPUExecutionProvider from jetson_benchmark_env
+tensorrt: 8.0.1.6 from /home/jetson/.local/lib/python3.8/site-packages
+jtop: 4.3.2
+
+Security statement: no password, SSH key, credential, token, or secret is stored in this file or benchmark package.

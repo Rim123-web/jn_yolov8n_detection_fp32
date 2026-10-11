@@ -1,0 +1,10 @@
+Preprocessing stage,Mean latency (ms)
+file_access_decode,20.130489781250002
+exif_orientation,1.2091224375000003
+color_conversion,0.9591874739583334
+resize_calculation,0.023581229166666672
+image_resize,1.8269737135416666
+padding_letterbox,1.8147497031250002
+pixel_scaling,13.679549369791667
+layout_conversion,0.047625739583333326
+fp32_contiguous,6.1452320729166665

@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "counts": {
+    "png": 33,
+    "svg": 33,
+    "pdf": 33
+  },
+  "source_csv_count": 33
+}

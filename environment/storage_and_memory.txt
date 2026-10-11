@@ -1,0 +1,13 @@
+total        used        free      shared  buff/cache   available
+Mem:          3,9Gi       2,1Gi       493Mi        20Mi       1,3Gi       1,6Gi
+Swap:         1,9Gi       5,0Mi       1,9Gi
+
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/mmcblk0p1  116G   38G   74G  34% /
+/dev/mmcblk0p1  116G   38G   74G  34% /
+
+NAME       TYPE        SIZE USED PRIO
+/dev/zram0 partition 495,4M 1,3M    5
+/dev/zram1 partition 495,4M 1,3M    5
+/dev/zram2 partition 495,4M 1,3M    5
+/dev/zram3 partition 495,4M 1,3M    5

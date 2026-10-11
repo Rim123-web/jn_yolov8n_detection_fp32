@@ -1,0 +1,32 @@
+{
+  "status": "PASS",
+  "onnx_checker": "PASS",
+  "input_shape": [
+    {
+      "name": "images",
+      "dtype": "FLOAT",
+      "shape": [
+        1,
+        3,
+        640,
+        960
+      ]
+    }
+  ],
+  "outputs": [
+    {
+      "name": "output0",
+      "dtype": "FLOAT",
+      "shape": [
+        1,
+        10,
+        12600
+      ]
+    }
+  ],
+  "batch": 1,
+  "input_dtype_fp32": true,
+  "raw_output": true,
+  "embedded_nms": false,
+  "dynamic_dimensions": false
+}
